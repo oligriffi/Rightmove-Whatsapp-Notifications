@@ -20,7 +20,7 @@ pip install pywhatkit requests bs4
 
 4. Run the script in your terminal:
 ```
-python property_scraper.py
+python Rightmove_Whatsapp.py
 ```
 5. Log onto https://web.whatsapp.com/
 
