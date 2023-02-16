@@ -9,8 +9,8 @@ print(datetime.datetime.now().hour)
 print(datetime.datetime.now().minute)
 
 # URL of the website to scrape
-url = 'https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=OUTCODE%5E293&maxBedrooms=3&minBedrooms=3&radius=3.0&propertyTypes=&mustHave=student&dontShow=&furnishTypes=&keywords='
-
+url = 'https://www.rightmove.co.uk/property-for-sale/W1.html'
+group_id = 'KZrWwMQH6MfEJuYbxjNRqC'
 # File to store the initial properties
 file_path = 'properties.txt'
 
@@ -50,7 +50,7 @@ while True:
     for prop in new_props:
         message = f'New property found:\nName: {prop[0]}\nAddress: {prop[1]}\nPrice: {prop[2]}\nLink: {prop[3]}'
         if not first_time_running:
-            pw.sendwhatmsg_to_group_instantly("KZrWwMQH6MfEJuYbxjNRqC", message, wait_time=60, tab_close=True)
+            pw.sendwhatmsg_to_group_instantly(group_id, message, wait_time=60, tab_close=True)
         print(message)
     
     # Update the list of initial properties
