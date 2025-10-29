@@ -10,7 +10,7 @@ print(datetime.datetime.now().minute)
 
 # URL of the website to scrape
 url = 'https://www.rightmove.co.uk/property-for-sale/W1.html'
-group_id = 'KZrWwMQH6MfEJuYbxjNRqC'
+group_id = 'ADDGROUPIDHERE'
 # File to store the initial properties
 file_path = 'properties.txt'
 
